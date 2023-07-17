@@ -5,14 +5,14 @@ package org.example.vikins;import org.example.soldier.Soldier;class Viking exten
         super(health, strength);
         this.name = name;
     }
-    public int receiveDamage(int damage) {
+    public String receiveDamage(int damage) {
         this.health -= damage;
         if (this.health > 0) {
             this.msg = this.name + "has received" + damage + "points of damage";
         } else {
             this.msg = this.name + "has died in combat";
         }
-        return this.health;
+        return String.valueOf(this.health);
     }
     public String getMsg() {
         return this.msg;

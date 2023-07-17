@@ -11,8 +11,8 @@ public class Soldier {
     public int attack() {
         return this.strength;
     }
-    public int receiveDamage(int damage){
+    public String receiveDamage(int damage){
         this.health = this.health - damage;
-        return this.health;
+        return String.valueOf(this.health);
     }
 }
